@@ -1,0 +1,42 @@
+﻿
+@model MvcEFHttpClient.Models.Product
+@{
+    ViewBag.Title = "GetProductById";
+}
+
+<h2>GetProductById</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QualityStock)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Suppiler)
+        </th>
+        <th></th>
+    </tr>
+
+
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.QualityStockk)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Suppiler)
+        </td>
+
+    </tr>
+
+
